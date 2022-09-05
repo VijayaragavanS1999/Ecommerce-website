@@ -1,0 +1,10 @@
+.home {
+  display: flex;
+}
+.product-page {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
+  padding: 20px;
+  justify-content: flex-end;
+}
