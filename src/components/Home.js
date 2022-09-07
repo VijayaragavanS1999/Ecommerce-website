@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <div className="home">
       <Filter />
-      <div className="product-page">
+      <div className="home-right">
         {products.map((prod) => {
           return <SingleProduct prod={prod} key={prod.Id} />;
         })}
