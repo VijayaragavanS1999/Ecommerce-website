@@ -2,7 +2,6 @@ import { createContext, useContext, useState } from "react";
 import "../components/ProductPage.css";
 import { items } from "../components/AllData";
 import TrendingSlider from "../components/TrendingSlider";
-import Newsletter from "../components/Newsletter";
 import Footer from "../components/Footer";
 import { useParams } from "react-router";
 
@@ -87,7 +86,7 @@ function ProductPage() {
                   <p className="quantity">{quantity}</p>
                   <button onClick={increase}>+</button>
                 </div>
-                <p className="product-price">{calcPrice(quantity)}.00$</p>
+                <p className="product-price">₹{calcPrice(quantity)}</p>
               </div>
               <div className="atc-buy">
                 <button
@@ -120,7 +119,6 @@ function ProductPage() {
           </div>
         </div>
         <TrendingSlider />
-        <Newsletter />
         <Footer />
       </div>
     </>
